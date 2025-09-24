@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Texas Medical Lab — Comprehensive Diagnostic Services for the Best Prices</title>
+  <meta name="description" content="Texas Medical Lab provides reliable and affordable diagnostic services in the UAE." />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+
+  <style>
+    :root{
+      --accent:#0b6efd;
+      --bg:#f7f9fc;
+      --card:#ffffff;
+      --muted:#666;
+      --radius:12px;
+      --page-max:980px;
+      font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,var(--bg),#fff 60%);
+      color:#111;
+      -webkit-font-smoothing:antialiased;
+      line-height:1.5;
+      display:flex;
+      justify-content:center;
+      padding:28px 16px;
+    }
+    .site{width:100%;max-width:var(--page-max)}
+
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px}
+    .brand .title{font-weight:700;font-size:18px}
+    .brand .tag{font-size:13px;color:var(--muted)}
+    nav{display:flex;gap:12px;align-items:center}
+    a.btn{padding:8px 14px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+    .secondary{padding:8px 14px;border-radius:10px;text-decoration:none;font-weight:600;border:1px solid #ddd;color:#111}
+
+    .hero{margin-top:12px;padding:32px;border-radius:var(--radius);display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:center;background:#fff;box-shadow:0 10px 30px rgba(30,45,60,0.04)}
+    .hero h1{margin:0;font-size:28px}
+    .hero p.lead{color:var(--muted);margin:10px 0 18px}
+    .cta-row{display:flex;gap:12px;margin-top:16px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 8px 28px rgba(20,30,60,0.04)}
+    .card h3{margin:0 0 10px 0}
+    .contact-list{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+    .contact-list li{display:flex;gap:10px;align-items:center;color:var(--muted)}
+
+    section.services{margin-top:20px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .service{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 8px 24px rgba(17,24,40,0.03)}
+    .service h4{margin:0 0 8px}
+
+    footer{margin-top:20px;padding:18px;border-radius:12px;display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:13px}
+
+    @media (max-width:880px){
+      .hero{grid-template-columns:1fr; padding:20px}
+      section.services{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="site">
+    <header>
+      <div class="brand">
+        <div class="title">Texas Medical Lab</div>
+        <div class="tag">Comprehensive Diagnostic Services for the Best Prices</div>
+      </div>
+      <nav>
+        <a class="secondary" href="#services">Services</a>
+        <a class="secondary" href="#contact">Contact</a>
+        <a class="btn" href="mailto:info@texasmedicallab.com">Email Us</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <h1>Affordable & Reliable Diagnostic Testing</h1>
+          <p class="lead">At Texas Medical Lab, we are committed to delivering high-quality diagnostic services at the best prices. Our laboratory ensures accuracy, efficiency, and care for every patient.</p>
+          <div class="cta-row">
+            <a class="btn" href="tel:+971509712320">Call +971 509712320</a>
+            <a class="secondary" href="mailto:info@texasmedicallab.com">Email info@texasmedicallab.com</a>
+          </div>
+        </div>
+
+        <aside class="card">
+          <h3>Contact</h3>
+          <ul class="contact-list">
+            <li><strong>Phone:</strong> +971 509712320</li>
+            <li><strong>Email:</strong> <a href="mailto:info@texasmedicallab.com">info@texasmedicallab.com</a></li>
+            <li><strong>Address:</strong> Villa 141 Sheikh Zayed Street, Ak Ghubaiba, Sharjah</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section id="services" class="services">
+        <div class="service">
+          <h4>Blood Tests</h4>
+          <p>Comprehensive range of blood tests for accurate diagnosis.</p>
+        </div>
+        <div class="service">
+          <h4>Health Screenings</h4>
+          <p>Affordable packages tailored to individual and corporate needs.</p>
+        </div>
+        <div class="service">
+          <h4>Specialized Diagnostics</h4>
+          <p>Advanced diagnostic services to support specialized medical care.</p>
+        </div>
+      </section>
+
+      <section id="contact" style="margin-top:18px">
+        <div class="card">
+          <h3>Get in Touch</h3>
+          <p>For inquiries, bookings, or corporate services, please reach out via email or phone.</p>
+          <ul style="margin-top:12px;color:#666;font-size:14px">
+            <li><strong>Phone:</strong> +971 509712320</li>
+            <li><strong>Email:</strong> info@texasmedicallab.com</li>
+            <li><strong>Address:</strong> Villa 141 Sheikh Zayed Street, Ak Ghubaiba, Sharjah</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>© <span id="year"></span> Texas Medical Lab</div>
+      <div>info@texasmedicallab.com</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
